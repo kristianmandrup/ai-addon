@@ -1,0 +1,40 @@
+{
+  "name": "ai-addon",
+  "description": "Addon manager for Aurelia",
+  "version": "0.1.0",
+  "homepage": "https://github.com/kristianmandrup/ai-addon",
+  "author": {
+    "name": "Kristian Mandrup",
+    "email": "kmandrup@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kristianmandrup/ai-addon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristianmandrup/ai-addon/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/kristianmandrup/ai-addon/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/ai-addon",
+  "bin": {
+      "ai-addon": "bin/ai-addon.js"
+  },
+  "engines": {
+      "node": ">= 0.10.36",
+      "npm": ">=1.4.28"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~2.1.2",
+    "mocha": "~2.2.1"
+  },
+  "keywords": []
+}

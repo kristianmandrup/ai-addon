@@ -1,0 +1,59 @@
+{
+  "dtsSource": [
+    "./node_modules/aurelia-ui-framework/**/*.d.ts"
+  ],
+  "bundles": {
+    "vendor-bundle.js": {
+      "prepend": [
+        "node_modules/fabric/dist/fabric.js",
+        "node_modules/whatwg-fetch/fetch.js"
+      ],
+      "dependencies": [
+        "lodash",
+        "moment",
+        "numeral",
+        "aurelia-validatejs",
+        "aurelia-fetch-client",
+        {
+          "name": "amcharts",
+          "path": "../node_modules/amcharts/dist",
+          "main": "amcharts",
+          "resources": [
+            "amcharts/plugins/export/export.css"
+          ]
+        },
+        {
+          "name": "validate.js",
+          "path": "../node_modules/validate.js",
+          "main": "validate"
+        },
+        {
+          "name": "aurelia-validation",
+          "path": "../node_modules/aurelia-validation/dist/amd",
+          "main": "aurelia-validation"
+        },
+        {
+          "name": "aurelia-ui-framework",
+          "path": "../node_modules/aurelia-ui-framework",
+          "main": "aurelia-ui-framework"
+        }
+      ]
+    }
+  },
+  "libs": [
+    "validate.js",
+    "aurelia-validation",
+    "aurelia-validatejs",
+    "aurelia-ui-framework",
+    "amcharts",
+    "moment",
+    "numeral",
+    "fabric",
+    "whatwg-fetch"
+  ],
+  "plugins": [
+    "aurelia-validation",
+    "aurelia-validatejs",
+    "aurelia-ui-framework"
+  ]
+}
