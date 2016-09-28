@@ -1,6 +1,6 @@
 ## Install addon
 
-Automate installation of addons such as [aurelia-ui-framework]()
+Automate installation of addons such as [sigma-ui-framework](https://github.com/sigmaframeworks/sigma-ui-framework)
 
 Multiple dependency installs (npm):
 
@@ -34,22 +34,25 @@ Multiple dependency installs (npm):
 "plugins": [
   ... // plugins to install
 ]
-```  
+```
+
+### Plugins config
 
 ```
 plugins/
   index.js
 ```
 
-```
+```js
 export default = [
   ...
   ,'aurelia-ui-framework' <-- insert
-]
+];
+```
 
 `plugins/aurelia-ui-framework.js`
 
-```
+```js
 export default function configure(aurelia) {
     aurelia.use
        .plugin('aurelia-validation')
@@ -86,14 +89,15 @@ npm install validate.js aurelia-validation aurelia-validatejs aurelia-ui-framewo
 ##### Modify `aurelia_project/aurelia.json`
 
 Add the following to the  `vendor-bundle` -> `prepend` array
-```
+
+```json
 "node_modules/fabric/dist/fabric.js",
 "node_modules/whatwg-fetch/fetch.js"
 ```
 
 Add the following to the  `vendor-bundle` -> `dependencies` array
 
-```
+```json
 "lodash",
 "moment",
 "numeral",
@@ -126,6 +130,7 @@ Add the following to the  `vendor-bundle` -> `dependencies` array
 
 Add the next line to `dtsSource` under `transpiler`
 
-```
+```json
 "./node_modules/aurelia-ui-framework/**/*.d.ts"
 ```
+
