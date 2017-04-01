@@ -1,5 +1,7 @@
 # Ai-addon [![Build Status](https://secure.travis-ci.org/kristianmandrup/ai-addon.png?branch=master)](http://travis-ci.org/kristianmandrup/ai-addon) [![NPM version](https://badge-me.herokuapp.com/api/npm/ai-addon.png)](http://badges.enytc.com/for/npm/ai-addon)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/ai-addon.svg)](https://greenkeeper.io/)
+
 ## Addon manager for Aurelia
 
 Automate installation of addons such as [sigma-ui-framework](https://github.com/sigmaframeworks/sigma-ui-framework)
